@@ -1,0 +1,156 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include"alphabets.h"
+int n,i;
+int main()
+{
+	int l,aa=1,i=1,count=1;
+	char abcd[100],xyz;
+	
+    printf("\nenter string");
+	//scanf("%s",abcd);
+	fgets(abcd, 99, stdin);
+	
+	printf("\nenter size of String [recomended between 3-5]:");
+	scanf("%d",&n);
+	
+	
+	l=strlen(abcd);
+	/*for(i=0;i<l;i++)
+	{
+		printf("%c",abcd[i]);
+	}*/
+	printf("\n");
+	while(aa<7)
+	{
+		for(i=0;i<l;i++)
+		{
+			xyz=abcd[i];
+			if(xyz==97)
+			{
+				a(aa);
+			}
+			if(xyz==98)
+			{
+				b(aa);
+			}
+			if(xyz==99)
+			{
+				c(aa);
+			}
+			if(xyz==100)
+			{
+				d(aa);
+			}
+						if(xyz==101)
+			{
+				e(aa);
+			}
+						if(xyz==102)
+			{
+				f(aa);
+			}
+						if(xyz==103)
+			{
+				g(aa);
+			}
+						if(xyz==104)
+			{
+				h(aa);
+			}
+						if(xyz==105)
+			{
+				i1(aa);
+			}
+						if(xyz==106)
+			{
+				j(aa);
+			}
+						if(xyz==107)
+			{
+				k(aa);
+			}
+						if(xyz==108)
+			{
+				l1(aa);
+			}
+            if(xyz==109)
+			{
+				m(aa);
+			}
+            if(xyz==110)
+			{
+				n1(aa);
+			}
+						if(xyz==111)
+			{
+				o(aa);
+			}
+			if(xyz==112)
+			{
+				p(aa);
+			}
+
+			if(xyz==113)
+			{
+				q(aa);
+			}
+			if(xyz==114)
+			{
+				r(aa);
+			}
+						if(xyz==115)
+			{
+				s(aa);
+			}
+						if(xyz==116)
+			{
+				t(aa);
+			}
+						if(xyz==117)
+			{
+				u(aa);
+			}
+            if(xyz==118)
+			{
+				v(aa);
+			}
+            if(xyz==119)
+			{
+				w(aa);
+			}
+            if(xyz==120)
+			{
+				x(aa);
+			}
+						if(xyz==121)
+			{
+				y(aa);
+			}
+            if(xyz==122)
+			{
+				z(aa);
+			}
+            if(xyz==10)
+			{
+				space(aa);
+			}
+		}
+		printf("\n");
+        if(aa!=3)
+		aa++;
+        else
+        {
+            if(count<2)
+            {
+            count++;
+                }
+            else
+            {
+                aa++;
+            }
+        }
+	}
+}
+

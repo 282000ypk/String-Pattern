@@ -1,0 +1,769 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include"pattern.h"
+void y(int);
+void o(int);
+void g(int);
+void e(int);
+void s(int);
+void h(int);
+void a(int);
+void b(int);
+void c(int);
+void d(int);
+void f(int);
+void i1(int);
+void j(int);
+void k(int);
+void r(int);
+void l1(int);
+void u(int);
+void q(int);
+void t(int);
+void p(int);
+void space(int x)
+{
+	if(x==1)
+	{
+	empty();
+	}
+	if(x==2)
+	{
+	empty();
+	}
+	if(x==3)
+	{
+	empty();
+	}
+	if(x==4)
+	{
+	empty();
+	}
+	if(x==5)
+	{
+	empty();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void m(int x)
+{
+	if(x==1)
+	{
+	midfillw();
+        midfill();
+	}
+	if(x==2)
+	{
+	midemptyw();
+        midempty();
+	}
+	if(x==3)
+	{
+        
+	midemptyw();
+        midempty();
+        
+	}
+	if(x==4)
+	{
+	midemptyw();
+        midempty();
+	}
+	if(x==5)
+	{
+	midemptyw();
+        midempty();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void n1(int x)
+{
+	if(x==1)
+	{
+	midemptyn11();
+	}
+	if(x==2)
+	{
+	midemptyn1();
+	}
+	if(x==3)
+	{
+	full();
+        printf(" ");
+   
+	}
+	if(x==4)
+	{
+	midemptyn2();
+	}
+	if(x==5)
+	{
+	midemptyn22();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void w(int x)
+{
+	if(x==1)
+	{
+	frontfull1();
+        lastfull();
+	}
+	if(x==2)
+	{
+	midemptyw();
+        midempty();
+	}
+	if(x==3)
+	{
+	midemptyw();
+        midempty();
+        
+	}
+	if(x==4)
+	{
+	midemptyw();
+        midempty();
+	}
+	if(x==5)
+	{
+	midfillw();
+        midfill();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+
+void u(int x)
+{
+	if(x==1)
+	{
+	midempty();
+	}
+	if(x==2)
+	{
+	midempty();
+	}
+	if(x==3)
+	{
+	midempty();
+	}
+	if(x==4)
+	{
+	midempty();
+	}
+	if(x==5)
+	{
+	full();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void x(int x)
+{
+	if(x==1)
+	{
+	midempty();
+	}
+	if(x==2)
+	{
+	midempty();
+	}
+	if(x==3)
+	{
+	midfill();
+	}
+	if(x==4)
+	{
+	midempty();
+	}
+	if(x==5)
+	{
+	midempty();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void z(int x)
+{
+	if(x==1)
+	{
+	full();
+	}
+	if(x==2)
+	{
+	lastfull();
+	}
+	if(x==3)
+	{
+	midfill();
+	}
+	if(x==4)
+	{
+	frontfull();
+	}
+	if(x==5)
+	{
+	full();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void v(int x)
+{
+	if(x==1)
+	{
+	midempty();
+	}
+	if(x==2)
+	{
+	midempty();
+	}
+	if(x==3)
+	{
+	midempty();
+	}
+	if(x==4)
+	{
+	midempty();
+	}
+	if(x==5)
+	{
+	midfill();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void q(int x)
+{
+	if(x==1)
+	{
+	full();
+	}
+	if(x==2)
+	{
+	midempty();
+	}
+	if(x==3)
+	{
+	midempty();
+	}
+	if(x==4)
+	{
+	full();
+	}
+	if(x==5)
+	{
+	full();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void t(int x)
+{
+	if(x==1)
+	{
+	full();
+	}
+	if(x==2)
+	{
+	midfill();
+	}
+	if(x==3)
+	{
+	midfill();
+	}
+	if(x==4)
+	{
+	midfill();
+	}
+	if(x==5)
+	{
+	midfill();
+	}
+	if(x==6)
+	{
+	empty();
+	}
+}
+void l1(int x)
+{
+	if(x==1)
+	{
+	frontfull();
+	}
+	if(x==2)
+	{
+	frontfull();
+	}
+	if(x==3)
+	{
+	frontfull();
+	}
+	if(x==4)
+	{
+	frontfull();
+	}
+	if(x==5)
+	{
+	full();
+	}
+	if(x==6)
+	{
+	empty();
+	}
+}
+void p(int x)
+{
+	if(x==1)
+	{
+	full();
+	}
+	if(x==2)
+	{
+	midempty();
+	}
+	if(x==3)
+	{
+	full();
+	}
+	if(x==4)
+	{
+	frontfull();
+	}
+	if(x==5)
+	{
+	frontfull();
+	}
+	if(x==6)
+	{
+	empty();
+	}
+}
+void r(int x)
+{
+	if(x==1)
+	{
+	full();
+	}
+	if(x==2)
+	{
+	midempty();
+	}
+	if(x==3)
+	{
+	leftfill();
+	}
+	if(x==4)
+	{
+	midempty();
+	}
+	if(x==5)
+	{
+	midempty();
+	}
+	if(x==6)
+	{
+	empty();
+	}
+}
+void k(int x)
+{
+	if(x==1)
+	{
+	midempty();
+	}
+	if(x==2)
+	{
+	midempty();
+	}
+	if(x==3)
+	{
+	leftfill();
+	}
+	if(x==4)
+	{
+	midempty();
+	}
+	if(x==5)
+	{
+	midempty();
+	}
+	if(x==6)
+	{
+	empty();
+	}
+}
+void y(int x)
+{
+	if(x==1)
+	{
+	midempty();
+	}
+		if(x==2)
+	{
+	midempty();
+	}
+	if(x==3)
+	{
+	full();
+	}
+		if(x==4)
+	{
+	midfill();
+	}
+	if(x==5)
+	{
+	midfill();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void o(int x)
+{
+	if(x==1)
+	{
+	full();
+	}
+	if(x==2)
+	{
+	midempty();
+	}
+	if(x==3)
+	{
+	midempty();
+	}
+	if(x==4)
+	{
+	midempty();
+	}
+	if(x==5)
+	{
+	full();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void g(int x)
+{
+	if(x==1)
+	{
+	full();
+	}
+	if(x==2)
+	{
+	frontfull();
+	}
+	if(x==3)
+	{
+	frontfull();
+	}
+	if(x==4)
+	{
+	midempty();
+	}
+	if(x==5)
+	{
+	full();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void e(int x)
+{
+	if(x==1)
+	{
+	full();
+	}
+	if(x==2)
+	{
+	frontfull();
+	}
+	if(x==3)
+	{
+	full();
+	}
+	if(x==4)
+	{
+	frontfull();
+	}
+	if(x==5)
+	{
+	full();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void s(int x)
+{
+	if(x==1)
+	{
+	full();
+	}
+	if(x==2)
+	{
+	frontfull();
+	}
+	if(x==3)
+	{
+	full();
+	}
+	if(x==4)
+	{
+	lastfull();
+	}
+	if(x==5)
+	{
+	full();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void h(int x)
+{
+	if(x==1)
+	{
+	midempty();
+	}
+	if(x==2)
+	{
+	midempty();
+	}
+	if(x==3)
+	{
+	full();
+	}
+	if(x==4)
+	{
+	midempty();
+	}
+	if(x==5)
+	{
+	midempty();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void a(int x)
+{
+	if(x==1)
+	{
+	full();
+	}
+	if(x==2)
+	{
+	midempty();
+	}
+	if(x==3)
+	{
+	full();
+	}
+	if(x==4)
+	{
+	midempty();
+	}
+	if(x==5)
+	{
+	midempty();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void b(int x)
+{
+	if(x==1)
+	{
+	full1();
+	}
+	if(x==2)
+	{
+	midempty();
+	}
+	if(x==3)
+	{
+	full();
+	}
+	if(x==4)
+	{
+	midempty();
+	}
+	if(x==5)
+	{
+	full1();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void c(int x)
+{
+	if(x==1)
+	{
+	full();
+	}
+	if(x==2)
+	{
+	frontfull();
+	}
+	if(x==3)
+	{
+	frontfull();
+	}
+	if(x==4)
+	{
+	frontfull();
+	}
+	if(x==5)
+	{
+	full();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void d(int x)
+{
+	if(x==1)
+	{
+	full1();
+	}
+	if(x==2)
+	{
+	midempty();
+	}
+	if(x==3)
+	{
+	midempty();
+	}
+	if(x==4)
+	{
+	midempty();
+	}
+	if(x==5)
+	{
+	full1();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void f(int x)
+{
+	if(x==1)
+	{
+	full();
+	}
+	if(x==2)
+	{
+	frontfull();
+	}
+	if(x==3)
+	{
+	full();
+	}
+	if(x==4)
+	{
+	frontfull();
+	}
+	if(x==5)
+	{
+	frontfull();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void i1(int x)
+{
+	if(x==1)
+	{
+	full();
+	}
+	if(x==2)
+	{
+	midfill();
+	}
+	if(x==3)
+	{
+	midfill();
+	}
+	if(x==4)
+	{
+	midfill();
+	}
+	if(x==5)
+	{
+	full();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
+void j(int x)
+{
+	if(x==1)
+	{
+	full();
+	}
+	if(x==2)
+	{
+	midfill();
+	}
+	if(x==3)
+	{
+	midfill();
+	}
+	if(x==4)
+	{
+	midfill();
+	}
+	if(x==5)
+	{
+	leftfill();
+	}
+		if(x==6)
+	{
+	empty();
+	}
+}
